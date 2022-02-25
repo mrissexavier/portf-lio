@@ -1,0 +1,182 @@
+/* -----------------------média queries -----------------------------*/
+
+@media(max-width: 1024px){
+  .effect5{
+    top: 20%;
+    right: 4%;
+  }
+
+  .effect2{
+    bottom: 15%;
+    left: 1%;
+  }
+
+  .effect5{
+    top: 15%;
+    right: 2%;
+  }
+
+}
+
+@media (max-width: 991px){
+  .effect1{
+    bottom: 9%;
+    right: 2%;
+  }
+
+  .effect2{
+    bottom: 10%;
+    left: 1%;
+  }
+}
+
+@media(max-width: 767px) {
+  .contactSection .w-50,
+  .contactSection .contactItem,
+  .portfolioSection .portfolioItem,
+  .serviceSection .serviceItem,
+  .aboutSection .skills .skillItem,
+  .aboutSection .aboutInfo,
+  .aboutSection .aboutImg,
+  .homeSection .homeText,
+  .homeSection .homeImg{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contactSection .submitBtn,
+  .homeSection .homeText{
+    order: 2;
+    text-align: center;
+  }
+  .homeSection .fullScreen{
+    padding: 100px 0;
+  }
+  .homeSection .homeImg .imgBox{
+    margin-bottom: 80px;
+    max-width: 350px;
+  }
+  .effect3{
+    margin-left: -60px;
+  }
+  .effect4{
+    left: 15%;
+  }
+
+  .effect5{
+    right: 4%;
+  }
+
+  .aboutSection .aboutImg{
+    padding-bottom: 30px;
+  }
+
+  .aboutSection .timeline .timelineItem:nth-child(odd){
+    padding-right: 15px;
+    text-align: left;
+    padding-left: 75px;
+  }
+
+  .aboutSection .timeline .timelineItem:nth-child(even){
+    padding-left: 75px;
+  }
+
+  .aboutSection .timeline .timelineItem:nth-child(odd) .icon{
+    right: auto;
+    left: -60px;
+  }
+
+  .aboutSection .timeline .timelineItem:nth-child(even) .icon{
+    left: -60px;
+  }
+
+  .aboutSection .timeline:before{
+    left: 30px;
+  }
+
+  .aboutSection .timeline .timelineItem{
+    margin-bottom: 40px;
+  }
+
+  .aboutSection .timeline .timelineItem:last-child{
+    margin-bottom: 0;
+  }
+
+  .aboutSection .timeline .timelineItem:nth-child(odd) .timelineItemInner:before{
+    left: -30px;
+  }
+
+}
+
+@media (max-width: 321px){
+  .homeSection .homeText,
+  .homeSection .homeImg{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .effect3{
+    left: 44%;
+  }
+
+}
+
+@media (max-width: 574px){
+  .homeSection .homeImg .imgBox{
+    max-width: 260px;
+  }
+
+  .homeSection .homeText h2{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px){
+  .contactSection .contactItem,
+  .portfolioSection .portfolioItem,
+  .homeSection .homeText,
+  .homeSection .homeImg{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .homeSection .homeText h1{
+    font-size: 16px;
+  }
+
+  .homeSection .homeText h2{
+    font-size: 20px;
+  }
+
+  .homeSection .homeText p{
+    font-size: 15px;
+  }
+
+  .btn1{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .homeSection .homeImg .imgBox{
+    margin-bottom: 0;
+    max-width: 250px;
+  }
+
+  .portfolioSection .portfolioItemView{
+    font-size: 10px;
+  }
+
+  .effect3{
+    margin-left: -75px;
+  }
+
+  .effect4{
+    left: 4%;
+  }
+
+  .effect5{
+    height: 35px;
+    width: 35px;
+  }
+
+}
