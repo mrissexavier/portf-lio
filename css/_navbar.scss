@@ -1,0 +1,93 @@
+/*-----------------
+menu de navegação
+------------------*/
+
+.navMenu{
+  position: fixed;
+  background-color: var(--bg-black-50);
+  padding:0 15px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+}
+
+.navMenu.open{
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+  transition: all 0.3s ease-in;
+}
+
+.navMenu .closeNavMenu{
+  height: 40px;
+  width: 40px;
+  display: block;
+  font-size: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--text-black-600);
+  transition: all 0.3s ease;
+}
+
+.navMenu .closeNavMenu:after{
+  border-radius: 50%;
+}
+
+.navMenuInner{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navMenu ul{
+  padding: 15px;
+}
+
+.navMenu ul li{
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.navMenu ul li:last-child{
+  margin-bottom: 0;
+}
+
+.navMenu ul li a{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  padding:  5px 30px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.navMenu ul li a.active{
+  color: var(--pink)
+}
+
+.navMenu ul li a::after{
+  border-radius: 30px;
+}
+
+.navMenu .copyright-text{
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  font-size: 15px;
+  color: var(--text-black-600);
+  transform: translateY(-50%) rotate(-90deg);
+}

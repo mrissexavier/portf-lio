@@ -1,0 +1,213 @@
+/* ------------------
+portfolio section
+---------------------*/
+
+.portfolioSection {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+.portfolioSection .sectionTitle{
+  margin-bottom: 40px;
+}
+.portfolioSection .portfolioFilter{
+  padding: 0 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px ;
+}
+
+.portfolioSection .filterItem{
+  display: inline-block;
+  margin: 0 5px 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-black-600);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.portfolioSection .filterItem:hover:not(.active){
+  color: var(--text-black-300);
+}
+.portfolioSection .filterItem.active{
+  color: var(--pink);
+}
+
+.portfolioSection .portfolioItem{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolioSection .portfolioItem.hide{
+  display: none;
+}
+
+.portfolioSection .portfolioItem.show{
+  display: block;
+  animation: fadeInTop 0.5s ease;
+}
+
+.portfolioSection .portfolioItemInner{
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 100%;
+  cursor: pointer;
+}
+
+.portfolioSection .portfolioItemImg img{
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.portfolioSection .portfolioItemInner:hover .portfolioItemImg img{
+  transform: translateY(-25px);
+}
+
+.portfolioSection .portfolioItemImg {
+  position: relative;
+}
+
+.portfolioSection .portfolioItemImg .viewProject{
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--pink);
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transform: translateY(-5px);
+  z-index: -1;
+}
+
+.portfolioSection .portfolioItemInner:hover .viewProject{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.portfolioSection .portfolioItemInner p{
+  font-size: 16px;
+  margin: 10px 0 0;
+  color: var(--text-black-600);
+  text-transform: capitalize;
+}
+
+/* ------------------
+portfolio popup
+---------------------*/
+.portfolioPopup{
+  background-color: var(--bg-black-50);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow-y: scroll;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.portfolioPopup .open{
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolioPopup .ppImg {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.portfolioPopup .ppMain{
+  min-height: 100vh;
+  max-width: 1350px;
+  width: 850%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.portfolioPopup .ppMainInner {
+  padding: 70px 0 50px;
+  position: relative;
+}
+
+.portfolioPopup .ppClose {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  top: 15px;
+  color: var(--text-black-600);
+  font-size: 35px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.portfolioPopup .ppClose:after{
+  border-radius: 50%;
+}
+
+.portfolioPopup .ppClose:hover{
+  color: var(--pink);
+}
+
+.portfolioPopup .ppCounter{
+  position: absolute;
+  right: 5px;
+  height: 40px;
+  line-height: 40px;
+  bottom: 5px;
+  color: var(--text-black-600);
+}
+
+.portfolioPopup .ppPrev,
+.portfolioPopup .ppNext{
+  position: fixed;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1010;
+  color: var(--text-black-900);
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.portfolioPopup .ppPrev:hover,
+.portfolioPopup .ppNext:hover{
+  opacity: 1;
+}
+
+.portfolioPopup .ppPrev i,
+.portfolioPopup .ppNext i {
+  line-height: 40px;
+}
+
+.portfolioPopup .ppPrev i{
+  transform: rotate(180deg);
+}
+
+.portfolioPopup .ppPrev{
+  left: 15px;
+}
+
+.portfolioPopup .ppNext{
+  right: 15px;
+}
